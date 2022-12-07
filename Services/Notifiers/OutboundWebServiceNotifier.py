@@ -3,7 +3,6 @@ import octobot_services.notifier as notifier
 import tentacles.Services.Services_bases as Services_bases
 
 class OutboundWebServiceNotifier(notifier.AbstractNotifier):
-    REQUIRED_SERVICES = [Services_bases.TwitterService]
     NOTIFICATION_TYPE_KEY = "web"
 
     async def _handle_notification(self, notification: notification.Notification):
